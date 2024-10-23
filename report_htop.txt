@@ -1,0 +1,12 @@
+observations:
+evaluation_if_server_could_handle_load:
+  - performance_metrics:
+      - stable_memory: 11453.70 solicitudes por segundo  # Cantidad de solicitudes por segundo mantuvo una memoria estable
+      - cpu_load_average: 80%  # Porcentaje de carga promedio del CPU
+
+specification_of_excessive_resource_usage:
+  - cpu_peak_usage:
+      - observed: true  # Indica si se observó un pico de uso de CPU del 90% durante los primeros minutos de carga máxima
+      - peak_percentage: 90
+      - request_count_at_peak:
+          - value: 5000  # Número específico de peticiones con el que se hizo el pico
